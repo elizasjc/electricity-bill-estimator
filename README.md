@@ -48,69 +48,47 @@ An offline web-based application that helps users estimate their monthly electri
 
 
 🧪 How to Use
-Register or log in with a username and password.
-
-Enter quantity and usage hours for each listed appliance.
-
-Select the number of billing days and a chart type (bar, pie, bubble).
-
-Submit to view:
-
-⚡ Total energy consumed (in kWh)
-
-💸 Estimated electricity bill
-
-📊 Visualizations and appliance-level breakdown
-
-📈 Usage trend history and change comparison
+-Register or log in with a username and password.
+-Enter quantity and usage hours for each listed appliance.
+-Select the number of billing days and a chart type (bar, pie, bubble).
+-Submit to view:
+-⚡ Total energy consumed (in kWh)
+-💸 Estimated electricity bill
+-📊 Visualizations and appliance-level breakdown
+-📈 Usage trend history and change comparison
 
 
-📷 Screenshots
-![Register](<Screenshot 2025-06-27 134514.png>)
-![Login](<Screenshot 2025-06-27 134458.png>)
-![Input](<Screenshot 2025-06-27 134619.png>)
-![Estimation](<Screenshot 2025-06-27 134639.png>)
-![Visual](<Screenshot 2025-06-27 134658.png>)
-![Usage History Visual](<Screenshot 2025-06-27 134725.png>)
-![Usage History](<Screenshot 2025-06-27 134800.png>)
+##📷 Screenshots
+-![Register](<Screenshot 2025-06-27 134514.png>)
+-![Login](<Screenshot 2025-06-27 134458.png>)
+-![Input](<Screenshot 2025-06-27 134619.png>)
+-![Estimation](<Screenshot 2025-06-27 134639.png>)
+-![Visual](<Screenshot 2025-06-27 134658.png>)
+-![Usage History Visual](<Screenshot 2025-06-27 134725.png>)
+-![Usage History](<Screenshot 2025-06-27 134800.png>)
 
-🔮 Future Enhancements
-Export results to PDF
+## 🔮 Future Enhancements
+-Export results to PDF
+-Add dark mode toggle
+-Allow saving multiple usage profiles
+-Add admin analytics dashboard
+-Enable cloud sync with login (Firebase, etc.)
 
-Add dark mode toggle
+## 🗃️ Database Structure
+-SQLite Database: users.db
+-users table:
+-id (INT, Primary Key)
+-username (TEXT, unique)
+-password (TEXT, hashed)
+-usage_history table:
+-id (INT, Primary Key)
+-username (TEXT)
+-timestamp (TEXT)
+-appliance_data (TEXT – JSON)
+-total_energy (REAL)
+-estimated_bill (REAL)
 
-Allow saving multiple usage profiles
-
-Add admin analytics dashboard
-
-Enable cloud sync with login (Firebase, etc.)
-
-🗃️ Database Structure
-SQLite Database: users.db
-
-users table:
-
-id (INT, Primary Key)
-
-username (TEXT, unique)
-
-password (TEXT, hashed)
-
-usage_history table:
-
-id (INT, Primary Key)
-
-username (TEXT)
-
-timestamp (TEXT)
-
-appliance_data (TEXT – JSON)
-
-total_energy (REAL)
-
-estimated_bill (REAL)
-
-👩‍💻 Author
-Shilpa J Chethalen
-Postgraduate Student – M.Sc. Data Science
-GitHub: elizasjc
+## 👩‍💻 Author
+-Shilpa J Chethalen
+-Postgraduate Student – M.Sc. Data Science
+-GitHub: elizasjc
