@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Usage History</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f9f9f9; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 10px; }
+        .history-entry { border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Your Usage History</h2>
+        {% if history %}
+            {% for entry in history %}
+                <div class="history-entry">
+                    <p><strong>Date:</strong> {{ entry.timestamp }}</p>
+                    <p><strong>Total Energy Used:</strong> {{ entry.total_energy }} kWh</p>
+                    <p><strong>Estimated Bill:</strong> ₹{{ entry.estimated_bill }}</p>
+                    <p><strong>Appliance Breakdown:</strong></p>
+                    <ul>
+                        {% for appliance, energy in entry.breakdown.items() %}
+                            <li>{{ appliance }}: {{ energy }} kWh</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No usage history available.</p>
+        {% endif %}
+        <br>
+        <a href="{{ url_for('index') }}">← Back to Home</a>
+    </div>
+</body>
+</html>
