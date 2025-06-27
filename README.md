@@ -73,27 +73,15 @@ An offline web-based application that helps users estimate their monthly electri
 
 ## 📷 Screenshots
 
-### 🧾 Input Form Page
+### 📝 Input Form
+![Input Form](screenshots/Input_form.png)
 
-This is where the user enters appliance quantity and daily usage hours.
+### ⚡ Estimation Result
+![Estimation Result](screenshots/Estimation_Result.png)
 
-![Input Form](screenshots/input_form.png)
+### 📈 Usage Trend
+![Usage Trend](screenshots/Usage_Trend.png)
 
----
-
-### 📊 Estimation Result Page
-
-Displays total energy consumed, estimated bill, appliance-wise breakdown, and a chart.
-
-![Estimation Result](screenshots/result_page.png)
-
----
-
-### 📈 Usage Trend Chart
-
-Shows the user's historical energy usage pattern over time.
-
-![Usage Trend](screenshots/usage_trend.png)
 
 
 ---
