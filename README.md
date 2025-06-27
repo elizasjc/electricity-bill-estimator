@@ -49,7 +49,6 @@ An offline web-based application that helps users estimate their monthly electri
 ---
 
 
-=======
 ## 🧪 How to Use
 
 1. **Register** a new account using a username and password.
